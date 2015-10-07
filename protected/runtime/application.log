@@ -2352,3 +2352,1596 @@ Stack trace:
 REQUEST_URI=/Sites/webapp1/index.php?r=organizations/admin
 HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=organizations/index
 ---
+2015/09/30 18:13:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index\".' in /var/www/html/Sites/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(270): CController->missingAction('index\\')
+#1 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('index\\')
+#2 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('members/index\\')
+#3 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=members/index\
+---
+2015/09/30 18:13:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index\\".' in /var/www/html/Sites/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(270): CController->missingAction('index\\\\')
+#1 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('index\\\\')
+#2 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('members/index\\\\')
+#3 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=members/index\\
+---
+2015/10/01 07:25:13 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "members".' in /var/www/html/Sites/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('members', Array, true)
+#1 /var/www/html/Sites/webapp1/protected/controllers/SiteController.php(98): CController->render('members', Array)
+#2 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionMembers()
+#3 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('members')
+#7 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/members')
+#8 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=site/members
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=members/update&id=1
+---
+2015/10/01 07:26:17 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "members".' in /var/www/html/Sites/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('members', Array, true)
+#1 /var/www/html/Sites/webapp1/protected/controllers/SiteController.php(89): CController->render('members', Array)
+#2 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionMembers()
+#3 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('members')
+#7 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/members')
+#8 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=site/members
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=members/update&id=1
+---
+2015/10/01 07:26:40 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "members".' in /var/www/html/Sites/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('members', Array, true)
+#1 /var/www/html/Sites/webapp1/protected/controllers/SiteController.php(89): CController->render('members', Array)
+#2 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionMembers()
+#3 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('members')
+#7 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/members')
+#8 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=site/members
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=members/update&id=1
+---
+2015/10/01 07:28:50 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "admin".' in /var/www/html/Sites/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#1 /var/www/html/Sites/webapp1/protected/controllers/SiteController.php(87): CController->render('admin', Array)
+#2 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionMembers()
+#3 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('members')
+#7 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/members')
+#8 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=site/members
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=members/update&id=1
+---
+2015/10/01 07:29:29 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "admin".' in /var/www/html/Sites/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#1 /var/www/html/Sites/webapp1/protected/controllers/SiteController.php(87): CController->render('admin', Array)
+#2 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionMembers()
+#3 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('members')
+#7 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('site/members')
+#8 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#9 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=site/members
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=members/update&id=1
+---
+2015/10/01 11:01:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/Sites/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/Sites/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/Sites/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('members/admin')
+#9 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=members/admin
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=site/login
+---
+2015/10/01 11:01:08 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/Sites/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/Sites/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/Sites/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('members/admin')
+#9 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=members/admin
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=members/admin
+---
+2015/10/01 11:19:22 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/Sites/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/Sites/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/Sites/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('members/admin')
+#9 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=members/admin
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=members/admin
+---
+2015/10/01 11:19:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/Sites/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/Sites/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/Sites/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('members/admin')
+#9 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=members/admin
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=members/admin
+---
+2015/10/01 12:10:19 [error] [php] Undefined variable: data (/var/www/html/Sites/webapp1/protected/views/users/admin.php:52)
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(869): UsersController->renderFile()
+#1 /var/www/html/Sites/framework/web/CController.php(782): UsersController->renderPartial()
+#2 /var/www/html/Sites/webapp1/protected/controllers/UsersController.php(143): UsersController->render()
+#3 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): UsersController->actionAdmin()
+#4 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): UsersController->runAction()
+#6 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/Sites/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#9 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/Sites/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#12 /var/www/html/Sites/framework/web/CWebApplication.php(282): UsersController->run()
+#13 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=users/admin
+in /var/www/html/Sites/webapp1/protected/views/users/admin.php (52)
+in /var/www/html/Sites/webapp1/protected/controllers/UsersController.php (143)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/01 12:10:36 [error] [exception.CException] exception 'CException' with message 'Property "Users.organizationName" is not defined.' in /var/www/html/Sites/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(145): CComponent->__get('organizationNam...')
+#1 /var/www/html/Sites/framework/web/helpers/CHtml.php(2728): CActiveRecord->__get('organizationNam...')
+#2 /var/www/html/Sites/framework/web/helpers/CHtml.php(2451): CHtml::resolveValue(Object(Users), 'organizationNam...')
+#3 /var/www/html/Sites/framework/web/helpers/CHtml.php(1533): CHtml::activeInputField('text', Object(Users), 'organizationNam...', Array)
+#4 /var/www/html/Sites/framework/zii/widgets/grid/CDataColumn.php(104): CHtml::activeTextField(Object(Users), 'organizationNam...', Array)
+#5 /var/www/html/Sites/framework/zii/widgets/grid/CGridColumn.php(253): CDataColumn->getFilterCellContent()
+#6 /var/www/html/Sites/framework/zii/widgets/grid/CGridColumn.php(119): CGridColumn->renderFilterCellContent()
+#7 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(538): CGridColumn->renderFilterCell()
+#8 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(516): CGridView->renderFilter()
+#9 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(486): CGridView->renderTableHeader()
+#10 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(181): CGridView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#13 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#14 /var/www/html/Sites/framework/web/CBaseController.php(181): CBaseListView->run()
+#15 /var/www/html/Sites/webapp1/protected/views/users/admin.php(77): CBaseController->widget('zii.widgets.gri...', Array)
+#16 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#17 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#18 /var/www/html/Sites/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#19 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#20 /var/www/html/Sites/webapp1/protected/controllers/UsersController.php(143): CController->render('admin', Array)
+#21 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): UsersController->actionAdmin()
+#22 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#23 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#29 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('admin')
+#31 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('users/admin')
+#32 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#33 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=users/admin
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=users/index
+---
+2015/10/01 12:29:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /var/www/html/Sites/webapp1/protected/controllers/GroupTypesController.php:157
+Stack trace:
+#0 /var/www/html/Sites/webapp1/protected/controllers/GroupTypesController.php(89): GroupTypesController->loadModel('2')
+#1 [internal function]: GroupTypesController->actionUpdate('2')
+#2 /var/www/html/Sites/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(GroupTypesController), Array)
+#3 /var/www/html/Sites/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(GroupTypesController), Object(ReflectionMethod), Array)
+#4 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('update')
+#13 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('groupTypes/upda...')
+#14 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=groupTypes/update&id=2
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=groupTypes/view&id=2
+---
+2015/10/03 07:41:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dashboard".' in /var/www/html/Sites/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('dashboard')
+#1 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=dashboard
+---
+2015/10/03 07:44:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dashboard".' in /var/www/html/Sites/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('dashboard')
+#1 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=dashboard
+---
+2015/10/03 07:44:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dashboard".' in /var/www/html/Sites/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('dashboard')
+#1 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=dashboard
+---
+2015/10/03 08:24:50 [error] [exception.CException] exception 'CException' with message 'DashController cannot find the requested view "members/_view".' in /var/www/html/Sites/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/Sites/webapp1/protected/controllers/DashController.php(27): CController->renderPartial('members/_view', NULL, true)
+#1 /var/www/html/Sites/framework/web/CWebApplication.php(281): DashController->init()
+#2 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('dash/dash')
+#3 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=dash/dash
+---
+2015/10/03 08:25:39 [error] [php] Undefined variable: dataProvider (/var/www/html/Sites/webapp1/protected/views/members/index.php:18)
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(869): DashController->renderFile()
+#1 /var/www/html/Sites/webapp1/protected/controllers/DashController.php(27): DashController->renderPartial()
+#2 /var/www/html/Sites/framework/web/CWebApplication.php(281): DashController->init()
+#3 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=dash/dash
+in /var/www/html/Sites/webapp1/protected/views/members/index.php (18)
+in /var/www/html/Sites/webapp1/protected/controllers/DashController.php (27)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/03 08:28:15 [error] [exception.CException] exception 'CException' with message 'DashController cannot find the requested view "members/index".' in /var/www/html/Sites/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/Sites/webapp1/protected/controllers/DashController.php(27): CController->renderPartial('members/index', NULL, true)
+#1 /var/www/html/Sites/framework/web/CWebApplication.php(281): DashController->init()
+#2 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('dash/dash')
+#3 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=dash/dash
+---
+2015/10/03 08:31:58 [error] [exception.CException] exception 'CException' with message 'DashController cannot find the requested view "members/index".' in /var/www/html/Sites/framework/web/CController.php:878
+Stack trace:
+#0 /var/www/html/Sites/webapp1/protected/controllers/DashController.php(27): CController->renderPartial('members/index', NULL, true)
+#1 /var/www/html/Sites/framework/web/CWebApplication.php(281): DashController->init()
+#2 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('dash/dash')
+#3 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#4 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=dash/dash
+---
+2015/10/03 08:34:46 [error] [php] Undefined variable: dataProvider (/var/www/html/Sites/webapp1/protected/views/members/index.php:18)
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(869): DashController->renderFile()
+#1 /var/www/html/Sites/webapp1/protected/controllers/DashController.php(27): DashController->renderPartial()
+#2 /var/www/html/Sites/framework/web/CWebApplication.php(281): DashController->init()
+#3 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=dash/dash
+in /var/www/html/Sites/webapp1/protected/views/members/index.php (18)
+in /var/www/html/Sites/webapp1/protected/controllers/DashController.php (27)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/03 08:35:04 [error] [php] Undefined variable: model (/var/www/html/Sites/webapp1/protected/views/members/_form.php:20)
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(869): DashController->renderFile()
+#1 /var/www/html/Sites/webapp1/protected/controllers/DashController.php(27): DashController->renderPartial()
+#2 /var/www/html/Sites/framework/web/CWebApplication.php(281): DashController->init()
+#3 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=dash/dash
+in /var/www/html/Sites/webapp1/protected/views/members/_form.php (20)
+in /var/www/html/Sites/webapp1/protected/controllers/DashController.php (27)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/03 08:35:39 [error] [php] Undefined variable: model (/var/www/html/Sites/webapp1/protected/views/members/_form.php:20)
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(869): DashController->renderFile()
+#1 /var/www/html/Sites/webapp1/protected/controllers/DashController.php(27): DashController->renderPartial()
+#2 /var/www/html/Sites/framework/web/CWebApplication.php(281): DashController->init()
+#3 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=dash/dash
+in /var/www/html/Sites/webapp1/protected/views/members/_form.php (20)
+in /var/www/html/Sites/webapp1/protected/controllers/DashController.php (27)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/03 08:35:43 [error] [php] Undefined variable: model (/var/www/html/Sites/webapp1/protected/views/members/_form.php:20)
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(869): DashController->renderFile()
+#1 /var/www/html/Sites/webapp1/protected/controllers/DashController.php(27): DashController->renderPartial()
+#2 /var/www/html/Sites/framework/web/CWebApplication.php(281): DashController->init()
+#3 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=dash/dash
+in /var/www/html/Sites/webapp1/protected/views/members/_form.php (20)
+in /var/www/html/Sites/webapp1/protected/controllers/DashController.php (27)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/03 08:35:47 [error] [php] Undefined variable: model (/var/www/html/Sites/webapp1/protected/views/members/_form.php:20)
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(869): DashController->renderFile()
+#1 /var/www/html/Sites/webapp1/protected/controllers/DashController.php(27): DashController->renderPartial()
+#2 /var/www/html/Sites/framework/web/CWebApplication.php(281): DashController->init()
+#3 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=dash
+in /var/www/html/Sites/webapp1/protected/views/members/_form.php (20)
+in /var/www/html/Sites/webapp1/protected/controllers/DashController.php (27)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/04 05:48:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/Sites/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/Sites/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/Sites/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('members/admin')
+#9 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#10 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=members/admin
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php
+---
+2015/10/04 06:14:53 [error] [php] call_user_func() expects parameter 1 to be a valid callback, no array or string given (/var/www/html/Sites/framework/web/helpers/CHtml.php:2340)
+Stack trace:
+#0 /var/www/html/Sites/webapp1/protected/views/groups/_form.php(27): listData()
+#1 /var/www/html/Sites/framework/web/CBaseController.php(126): require()
+#2 /var/www/html/Sites/framework/web/CBaseController.php(95): GroupsController->renderInternal()
+#3 /var/www/html/Sites/framework/web/CController.php(869): GroupsController->renderFile()
+#4 /var/www/html/Sites/webapp1/protected/views/groups/create.php(18): GroupsController->renderPartial()
+#5 /var/www/html/Sites/framework/web/CBaseController.php(126): require()
+#6 /var/www/html/Sites/framework/web/CBaseController.php(95): GroupsController->renderInternal()
+#7 /var/www/html/Sites/framework/web/CController.php(869): GroupsController->renderFile()
+#8 /var/www/html/Sites/framework/web/CController.php(782): GroupsController->renderPartial()
+#9 /var/www/html/Sites/webapp1/protected/controllers/GroupsController.php(79): GroupsController->render()
+#10 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): GroupsController->actionCreate()
+#11 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): GroupsController->runAction()
+#13 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/html/Sites/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#15 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): GroupsController->filterAccessControl()
+#16 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#17 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/html/Sites/framework/web/CController.php(265): GroupsController->runActionWithFilters()
+#19 /var/www/html/Sites/framework/web/CWebApplication.php(282): GroupsController->run()
+#20 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#22 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=groups/create
+in /var/www/html/Sites/webapp1/protected/views/groups/_form.php (27)
+in /var/www/html/Sites/webapp1/protected/views/groups/create.php (18)
+in /var/www/html/Sites/webapp1/protected/controllers/GroupsController.php (79)
+2015/10/04 06:58:52 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.username" is not defined.' in /var/www/html/Sites/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/Sites/framework/web/auth/CWebUser.php(146): CComponent->__get('username')
+#1 /var/www/html/Sites/webapp1/protected/models/Groups.php(45): CWebUser->__get('username')
+#2 /var/www/html/Sites/framework/base/CModel.php(284): Groups->rules()
+#3 /var/www/html/Sites/framework/base/CModel.php(260): CModel->createValidators()
+#4 /var/www/html/Sites/framework/base/CModel.php(304): CModel->getValidators('groupTypeID')
+#5 /var/www/html/Sites/framework/web/helpers/CHtml.php(1513): CModel->isAttributeRequired('groupTypeID')
+#6 /var/www/html/Sites/framework/web/widgets/CActiveForm.php(600): CHtml::activeLabelEx(Object(Groups), 'groupTypeID', Array)
+#7 /var/www/html/Sites/webapp1/protected/views/groups/_form.php(23): CActiveForm->labelEx(Object(Groups), 'groupTypeID')
+#8 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#9 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#10 /var/www/html/Sites/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#11 /var/www/html/Sites/webapp1/protected/views/groups/update.php(21): CController->renderPartial('_form', Array)
+#12 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#13 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#14 /var/www/html/Sites/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#15 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('update', Array, true)
+#16 /var/www/html/Sites/webapp1/protected/controllers/GroupsController.php(103): CController->render('update', Array)
+#17 [internal function]: GroupsController->actionUpdate('3')
+#18 /var/www/html/Sites/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(GroupsController), Array)
+#19 /var/www/html/Sites/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(GroupsController), Object(ReflectionMethod), Array)
+#20 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#21 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#23 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#27 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('update')
+#29 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('groups/update')
+#30 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#31 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=groups/update&id=3
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=groups/view&id=3
+---
+2015/10/04 07:12:15 [error] [php] Undefined variable: data (/var/www/html/Sites/webapp1/protected/views/groups/admin.php:52)
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(869): GroupsController->renderFile()
+#1 /var/www/html/Sites/framework/web/CController.php(782): GroupsController->renderPartial()
+#2 /var/www/html/Sites/webapp1/protected/controllers/GroupsController.php(143): GroupsController->render()
+#3 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): GroupsController->actionAdmin()
+#4 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): GroupsController->runAction()
+#6 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/Sites/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): GroupsController->filterAccessControl()
+#9 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/Sites/framework/web/CController.php(265): GroupsController->runActionWithFilters()
+#12 /var/www/html/Sites/framework/web/CWebApplication.php(282): GroupsController->run()
+#13 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=groups/admin
+in /var/www/html/Sites/webapp1/protected/views/groups/admin.php (52)
+in /var/www/html/Sites/webapp1/protected/controllers/GroupsController.php (143)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/04 07:12:33 [error] [php] Trying to get property of non-object (/var/www/html/Sites/webapp1/protected/views/groups/admin.php:52)
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(869): GroupsController->renderFile()
+#1 /var/www/html/Sites/framework/web/CController.php(782): GroupsController->renderPartial()
+#2 /var/www/html/Sites/webapp1/protected/controllers/GroupsController.php(143): GroupsController->render()
+#3 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): GroupsController->actionAdmin()
+#4 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): GroupsController->runAction()
+#6 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/Sites/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): GroupsController->filterAccessControl()
+#9 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/Sites/framework/web/CController.php(265): GroupsController->runActionWithFilters()
+#12 /var/www/html/Sites/framework/web/CWebApplication.php(282): GroupsController->run()
+#13 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=groups/admin
+in /var/www/html/Sites/webapp1/protected/views/groups/admin.php (52)
+in /var/www/html/Sites/webapp1/protected/controllers/GroupsController.php (143)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/04 07:12:50 [error] [php] Undefined variable: model (/var/www/html/Sites/framework/base/CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 /var/www/html/Sites/framework/zii/widgets/grid/CGridColumn.php(231): CDataColumn->getDataCellContent()
+#1 /var/www/html/Sites/framework/zii/widgets/grid/CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#2 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(638): CDataColumn->renderDataCell()
+#3 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(622): CGridView->renderDataCell()
+#4 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(578): CGridView->renderTableRow()
+#5 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(488): CGridView->renderTableBody()
+#6 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(181): CGridView->renderItems()
+#7 unknown(0): CGridView->renderSection()
+#8 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(149): CGridView->renderContent()
+#10 /var/www/html/Sites/framework/web/CBaseController.php(181): CGridView->run()
+#11 /var/www/html/Sites/webapp1/protected/views/groups/admin.php(67): GroupsController->widget()
+#12 /var/www/html/Sites/framework/web/CBaseController.php(126): require()
+#13 /var/www/html/Sites/framework/web/CBaseController.php(95): GroupsController->renderInternal()
+#14 /var/www/html/Sites/framework/web/CController.php(869): GroupsController->renderFile()
+#15 /var/www/html/Sites/framework/web/CController.php(782): GroupsController->renderPartial()
+#16 /var/www/html/Sites/webapp1/protected/controllers/GroupsController.php(143): GroupsController->render()
+#17 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): GroupsController->actionAdmin()
+#18 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): GroupsController->runAction()
+#20 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /var/www/html/Sites/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#22 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): GroupsController->filterAccessControl()
+#23 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#24 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#25 /var/www/html/Sites/framework/web/CController.php(265): GroupsController->runActionWithFilters()
+#26 /var/www/html/Sites/framework/web/CWebApplication.php(282): GroupsController->run()
+#27 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#28 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#29 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=groups/admin
+in /var/www/html/Sites/webapp1/protected/views/groups/admin.php (67)
+in /var/www/html/Sites/webapp1/protected/controllers/GroupsController.php (143)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/04 07:12:51 [error] [php] Undefined variable: model (/var/www/html/Sites/framework/base/CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 /var/www/html/Sites/framework/zii/widgets/grid/CGridColumn.php(231): CDataColumn->getDataCellContent()
+#1 /var/www/html/Sites/framework/zii/widgets/grid/CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#2 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(638): CDataColumn->renderDataCell()
+#3 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(622): CGridView->renderDataCell()
+#4 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(578): CGridView->renderTableRow()
+#5 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(488): CGridView->renderTableBody()
+#6 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(181): CGridView->renderItems()
+#7 unknown(0): CGridView->renderSection()
+#8 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(149): CGridView->renderContent()
+#10 /var/www/html/Sites/framework/web/CBaseController.php(181): CGridView->run()
+#11 /var/www/html/Sites/webapp1/protected/views/groups/admin.php(67): GroupsController->widget()
+#12 /var/www/html/Sites/framework/web/CBaseController.php(126): require()
+#13 /var/www/html/Sites/framework/web/CBaseController.php(95): GroupsController->renderInternal()
+#14 /var/www/html/Sites/framework/web/CController.php(869): GroupsController->renderFile()
+#15 /var/www/html/Sites/framework/web/CController.php(782): GroupsController->renderPartial()
+#16 /var/www/html/Sites/webapp1/protected/controllers/GroupsController.php(143): GroupsController->render()
+#17 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): GroupsController->actionAdmin()
+#18 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): GroupsController->runAction()
+#20 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /var/www/html/Sites/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#22 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): GroupsController->filterAccessControl()
+#23 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#24 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#25 /var/www/html/Sites/framework/web/CController.php(265): GroupsController->runActionWithFilters()
+#26 /var/www/html/Sites/framework/web/CWebApplication.php(282): GroupsController->run()
+#27 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#28 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#29 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=groups/admin
+in /var/www/html/Sites/webapp1/protected/views/groups/admin.php (67)
+in /var/www/html/Sites/webapp1/protected/controllers/GroupsController.php (143)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/04 07:13:23 [error] [exception.CException] exception 'CException' with message 'Property "Groups.groupTypeName" is not defined.' in /var/www/html/Sites/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(145): CComponent->__get('groupTypeName')
+#1 /var/www/html/Sites/framework/web/helpers/CHtml.php(2728): CActiveRecord->__get('groupTypeName')
+#2 /var/www/html/Sites/framework/web/helpers/CHtml.php(2451): CHtml::resolveValue(Object(Groups), 'groupTypeName')
+#3 /var/www/html/Sites/framework/web/helpers/CHtml.php(1533): CHtml::activeInputField('text', Object(Groups), 'groupTypeName', Array)
+#4 /var/www/html/Sites/framework/zii/widgets/grid/CDataColumn.php(104): CHtml::activeTextField(Object(Groups), 'groupTypeName', Array)
+#5 /var/www/html/Sites/framework/zii/widgets/grid/CGridColumn.php(253): CDataColumn->getFilterCellContent()
+#6 /var/www/html/Sites/framework/zii/widgets/grid/CGridColumn.php(119): CGridColumn->renderFilterCellContent()
+#7 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(538): CGridColumn->renderFilterCell()
+#8 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(516): CGridView->renderFilter()
+#9 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(486): CGridView->renderTableHeader()
+#10 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(181): CGridView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#13 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#14 /var/www/html/Sites/framework/web/CBaseController.php(181): CBaseListView->run()
+#15 /var/www/html/Sites/webapp1/protected/views/groups/admin.php(67): CBaseController->widget('zii.widgets.gri...', Array)
+#16 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#17 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#18 /var/www/html/Sites/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#19 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#20 /var/www/html/Sites/webapp1/protected/controllers/GroupsController.php(143): CController->render('admin', Array)
+#21 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): GroupsController->actionAdmin()
+#22 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#23 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#29 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('admin')
+#31 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('groups/admin')
+#32 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#33 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=groups/admin
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=groups/index
+---
+2015/10/04 07:14:01 [error] [exception.CException] exception 'CException' with message 'Property "Groups.$data->groupType->groupTypeName" is not defined.' in /var/www/html/Sites/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(145): CComponent->__get('$data->groupTyp...')
+#1 /var/www/html/Sites/framework/web/helpers/CHtml.php(2728): CActiveRecord->__get('$data->groupTyp...')
+#2 /var/www/html/Sites/framework/web/helpers/CHtml.php(2451): CHtml::resolveValue(Object(Groups), '$data->groupTyp...')
+#3 /var/www/html/Sites/framework/web/helpers/CHtml.php(1533): CHtml::activeInputField('text', Object(Groups), '$data->groupTyp...', Array)
+#4 /var/www/html/Sites/framework/zii/widgets/grid/CDataColumn.php(104): CHtml::activeTextField(Object(Groups), '$data->groupTyp...', Array)
+#5 /var/www/html/Sites/framework/zii/widgets/grid/CGridColumn.php(253): CDataColumn->getFilterCellContent()
+#6 /var/www/html/Sites/framework/zii/widgets/grid/CGridColumn.php(119): CGridColumn->renderFilterCellContent()
+#7 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(538): CGridColumn->renderFilterCell()
+#8 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(516): CGridView->renderFilter()
+#9 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(486): CGridView->renderTableHeader()
+#10 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(181): CGridView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#13 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#14 /var/www/html/Sites/framework/web/CBaseController.php(181): CBaseListView->run()
+#15 /var/www/html/Sites/webapp1/protected/views/groups/admin.php(67): CBaseController->widget('zii.widgets.gri...', Array)
+#16 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#17 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#18 /var/www/html/Sites/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#19 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#20 /var/www/html/Sites/webapp1/protected/controllers/GroupsController.php(143): CController->render('admin', Array)
+#21 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): GroupsController->actionAdmin()
+#22 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#23 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#29 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('admin')
+#31 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('groups/admin')
+#32 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#33 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=groups/admin
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=groups/index
+---
+2015/10/04 07:32:52 [error] [php] Trying to get property of non-object (/var/www/html/Sites/webapp1/protected/views/userGroups/_form.php:52)
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(869): UserGroupsController->renderFile()
+#1 /var/www/html/Sites/webapp1/protected/views/userGroups/create.php(18): UserGroupsController->renderPartial()
+#2 /var/www/html/Sites/framework/web/CBaseController.php(126): require()
+#3 /var/www/html/Sites/framework/web/CBaseController.php(95): UserGroupsController->renderInternal()
+#4 /var/www/html/Sites/framework/web/CController.php(869): UserGroupsController->renderFile()
+#5 /var/www/html/Sites/framework/web/CController.php(782): UserGroupsController->renderPartial()
+#6 /var/www/html/Sites/webapp1/protected/controllers/UserGroupsController.php(79): UserGroupsController->render()
+#7 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): UserGroupsController->actionCreate()
+#8 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): UserGroupsController->runAction()
+#10 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/html/Sites/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): UserGroupsController->filterAccessControl()
+#13 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/html/Sites/framework/web/CController.php(265): UserGroupsController->runActionWithFilters()
+#16 /var/www/html/Sites/framework/web/CWebApplication.php(282): UserGroupsController->run()
+#17 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#19 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=userGroups/create
+in /var/www/html/Sites/webapp1/protected/views/userGroups/_form.php (52)
+in /var/www/html/Sites/webapp1/protected/views/userGroups/create.php (18)
+in /var/www/html/Sites/webapp1/protected/controllers/UserGroupsController.php (79)
+2015/10/04 08:39:46 [error] [exception.CException] exception 'CException' with message 'Property "Personnels.saltutationID" is not defined.' in /var/www/html/Sites/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(145): CComponent->__get('saltutationID')
+#1 /var/www/html/Sites/framework/web/helpers/CHtml.php(2728): CActiveRecord->__get('saltutationID')
+#2 /var/www/html/Sites/framework/web/helpers/CHtml.php(1981): CHtml::resolveValue(Object(Personnels), 'saltutationID')
+#3 /var/www/html/Sites/webapp1/protected/views/personnels/_form.php(59): CHtml::activeDropDownList(Object(Personnels), 'saltutationID', Array, Array)
+#4 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#5 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#6 /var/www/html/Sites/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#7 /var/www/html/Sites/webapp1/protected/views/personnels/create.php(18): CController->renderPartial('_form', Array)
+#8 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#9 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#10 /var/www/html/Sites/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#11 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#12 /var/www/html/Sites/webapp1/protected/controllers/PersonnelsController.php(79): CController->render('create', Array)
+#13 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): PersonnelsController->actionCreate()
+#14 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#17 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#18 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#21 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('create')
+#23 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('personnels/crea...')
+#24 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#25 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=personnels/create
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=personnels
+---
+2015/10/04 08:56:51 [error] [exception.CException] exception 'CException' with message 'Property "Gender.abbreviation" is not defined.' in /var/www/html/Sites/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(145): CComponent->__get('abbreviation')
+#1 /var/www/html/Sites/framework/validators/CRequiredValidator.php(58): CActiveRecord->__get('abbreviation')
+#2 /var/www/html/Sites/framework/validators/CValidator.php(201): CRequiredValidator->validateAttribute(Object(Gender), 'abbreviation')
+#3 /var/www/html/Sites/framework/base/CModel.php(159): CValidator->validate(Object(Gender), NULL)
+#4 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(808): CModel->validate(NULL)
+#5 /var/www/html/Sites/webapp1/protected/controllers/GenderController.php(73): CActiveRecord->save()
+#6 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): GenderController->actionCreate()
+#7 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('create')
+#16 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('gender/create')
+#17 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=gender/create
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=gender/create
+---
+2015/10/04 09:39:45 [error] [php] call_user_func() expects parameter 1 to be a valid callback, no array or string given (/var/www/html/Sites/framework/web/helpers/CHtml.php:2340)
+Stack trace:
+#0 /var/www/html/Sites/webapp1/protected/views/personnels/_form.php(81): listData()
+#1 /var/www/html/Sites/framework/web/CBaseController.php(126): require()
+#2 /var/www/html/Sites/framework/web/CBaseController.php(95): PersonnelsController->renderInternal()
+#3 /var/www/html/Sites/framework/web/CController.php(869): PersonnelsController->renderFile()
+#4 /var/www/html/Sites/webapp1/protected/views/personnels/create.php(18): PersonnelsController->renderPartial()
+#5 /var/www/html/Sites/framework/web/CBaseController.php(126): require()
+#6 /var/www/html/Sites/framework/web/CBaseController.php(95): PersonnelsController->renderInternal()
+#7 /var/www/html/Sites/framework/web/CController.php(869): PersonnelsController->renderFile()
+#8 /var/www/html/Sites/framework/web/CController.php(782): PersonnelsController->renderPartial()
+#9 /var/www/html/Sites/webapp1/protected/controllers/PersonnelsController.php(79): PersonnelsController->render()
+#10 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): PersonnelsController->actionCreate()
+#11 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): PersonnelsController->runAction()
+#13 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/html/Sites/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#15 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): PersonnelsController->filterAccessControl()
+#16 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#17 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/html/Sites/framework/web/CController.php(265): PersonnelsController->runActionWithFilters()
+#19 /var/www/html/Sites/framework/web/CWebApplication.php(282): PersonnelsController->run()
+#20 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#22 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=personnels/create
+in /var/www/html/Sites/webapp1/protected/views/personnels/_form.php (81)
+in /var/www/html/Sites/webapp1/protected/views/personnels/create.php (18)
+in /var/www/html/Sites/webapp1/protected/controllers/PersonnelsController.php (79)
+2015/10/05 11:30:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sds.gender' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `gender`.
+in /var/www/html/Sites/webapp1/protected/views/personnels/_form.php (81)
+in /var/www/html/Sites/webapp1/protected/views/personnels/create.php (18)
+in /var/www/html/Sites/webapp1/protected/controllers/PersonnelsController.php (79)
+2015/10/05 11:30:54 [error] [exception.CDbException] exception 'CDbException' with message 'The table "gender" for active record class "Gender" cannot be found in the database.' in /var/www/html/Sites/framework/db/ar/CActiveRecord.php:2385
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Gender))
+#1 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(661): CActiveRecord->getMetaData()
+#2 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(1355): CActiveRecord->getTableSchema()
+#3 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#4 /var/www/html/Sites/webapp1/protected/views/personnels/_form.php(81): CActiveRecord->findAll()
+#5 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#6 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#7 /var/www/html/Sites/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#8 /var/www/html/Sites/webapp1/protected/views/personnels/create.php(18): CController->renderPartial('_form', Array)
+#9 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#10 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#11 /var/www/html/Sites/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#12 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#13 /var/www/html/Sites/webapp1/protected/controllers/PersonnelsController.php(79): CController->render('create', Array)
+#14 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): PersonnelsController->actionCreate()
+#15 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#22 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('create')
+#24 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('personnels/crea...')
+#25 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#26 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=personnels/create
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=site/login
+---
+2015/10/05 11:37:08 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sds.gender' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `gender`.
+in /var/www/html/Sites/webapp1/protected/controllers/GenderController.php (65)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/05 11:37:08 [error] [exception.CDbException] exception 'CDbException' with message 'The table "gender" for active record class "Gender" cannot be found in the database.' in /var/www/html/Sites/framework/db/ar/CActiveRecord.php:2385
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Gender))
+#1 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /var/www/html/Sites/webapp1/protected/controllers/GenderController.php(65): CActiveRecord->__construct()
+#3 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): GenderController->actionCreate()
+#4 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('gender/create')
+#14 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=gender/create
+---
+2015/10/05 11:56:14 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sds.gender' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `gender`.
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/05 11:56:14 [error] [exception.CDbException] exception 'CDbException' with message 'The table "gender" for active record class "Gender" cannot be found in the database.' in /var/www/html/Sites/framework/db/ar/CActiveRecord.php:2385
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Gender))
+#1 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(138): CActiveRecord->getMetaData()
+#2 /var/www/html/Sites/framework/gii/generators/crud/CrudCode.php(66): CActiveRecord->__get('tableSchema')
+#3 /var/www/html/Sites/framework/validators/CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#4 /var/www/html/Sites/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#5 /var/www/html/Sites/framework/base/CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#6 /var/www/html/Sites/framework/gii/CCodeGenerator.php(159): CModel->validate()
+#7 /var/www/html/Sites/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('index')
+#13 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#14 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=gii/crud/index
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=gii/crud/index
+---
+2015/10/05 13:05:21 [error] [exception.CException] exception 'CException' with message 'Property "Personnels.organizationName" is not defined.' in /var/www/html/Sites/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(145): CComponent->__get('organizationNam...')
+#1 /var/www/html/Sites/framework/web/helpers/CHtml.php(2728): CActiveRecord->__get('organizationNam...')
+#2 /var/www/html/Sites/framework/web/helpers/CHtml.php(2451): CHtml::resolveValue(Object(Personnels), 'organizationNam...')
+#3 /var/www/html/Sites/framework/web/helpers/CHtml.php(1533): CHtml::activeInputField('text', Object(Personnels), 'organizationNam...', Array)
+#4 /var/www/html/Sites/framework/zii/widgets/grid/CDataColumn.php(104): CHtml::activeTextField(Object(Personnels), 'organizationNam...', Array)
+#5 /var/www/html/Sites/framework/zii/widgets/grid/CGridColumn.php(253): CDataColumn->getFilterCellContent()
+#6 /var/www/html/Sites/framework/zii/widgets/grid/CGridColumn.php(119): CGridColumn->renderFilterCellContent()
+#7 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(538): CGridColumn->renderFilterCell()
+#8 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(516): CGridView->renderFilter()
+#9 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(486): CGridView->renderTableHeader()
+#10 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(181): CGridView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#13 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#14 /var/www/html/Sites/framework/web/CBaseController.php(181): CBaseListView->run()
+#15 /var/www/html/Sites/webapp1/protected/views/personnels/admin.php(82): CBaseController->widget('zii.widgets.gri...', Array)
+#16 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#17 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#18 /var/www/html/Sites/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#19 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#20 /var/www/html/Sites/webapp1/protected/controllers/PersonnelsController.php(143): CController->render('admin', Array)
+#21 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): PersonnelsController->actionAdmin()
+#22 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#23 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#29 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('admin')
+#31 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('personnels/admi...')
+#32 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#33 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=personnels/admin
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=site/login
+---
+2015/10/05 13:09:40 [error] [exception.CException] exception 'CException' with message 'Property "Salutations.Abbreviation" is not defined.' in /var/www/html/Sites/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(145): CComponent->__get('Abbreviation')
+#1 /var/www/html/Sites/framework/base/CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('Abbreviation')
+#2 /var/www/html/Sites/framework/base/CComponent.php(612): eval()
+#3 /var/www/html/Sites/framework/zii/widgets/grid/CDataColumn.php(142): CComponent->evaluateExpression('$data->salutati...', Array)
+#4 /var/www/html/Sites/framework/zii/widgets/grid/CGridColumn.php(231): CDataColumn->getDataCellContent(0)
+#5 /var/www/html/Sites/framework/zii/widgets/grid/CGridColumn.php(154): CGridColumn->renderDataCellContent(0, Object(Personnels))
+#6 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(638): CGridColumn->renderDataCell(0)
+#7 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(622): CGridView->renderDataCell(Object(CDataColumn), 0)
+#8 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(578): CGridView->renderTableRow(0)
+#9 /var/www/html/Sites/framework/zii/widgets/grid/CGridView.php(488): CGridView->renderTableBody()
+#10 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(181): CGridView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#13 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#14 /var/www/html/Sites/framework/web/CBaseController.php(181): CBaseListView->run()
+#15 /var/www/html/Sites/webapp1/protected/views/personnels/admin.php(93): CBaseController->widget('zii.widgets.gri...', Array)
+#16 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#17 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#18 /var/www/html/Sites/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#19 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#20 /var/www/html/Sites/webapp1/protected/controllers/PersonnelsController.php(143): CController->render('admin', Array)
+#21 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): PersonnelsController->actionAdmin()
+#22 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#23 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#24 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#25 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#26 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#27 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#28 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#29 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#30 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('admin')
+#31 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('personnels/admi...')
+#32 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#33 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#34 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=personnels/admin
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=site/login
+---
+2015/10/05 14:23:44 [error] [php] Undefined variable: model (/var/www/html/Sites/webapp1/protected/views/members/view.php:7)
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(869): DashController->renderFile()
+#1 /var/www/html/Sites/webapp1/protected/controllers/DashController.php(22): DashController->renderPartial()
+#2 /var/www/html/Sites/framework/web/CWebApplication.php(281): DashController->init()
+#3 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#5 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=dash
+in /var/www/html/Sites/webapp1/protected/views/members/view.php (7)
+in /var/www/html/Sites/webapp1/protected/controllers/DashController.php (22)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/05 19:07:31 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.Class" is not defined.' in /var/www/html/Sites/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/Sites/framework/web/auth/CWebUser.php(160): CComponent->__set('Class', 'User')
+#1 /var/www/html/Sites/framework/YiiBase.php(220): CWebUser->__set('Class', 'User')
+#2 /var/www/html/Sites/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#3 /var/www/html/Sites/framework/base/CModule.php(103): CModule->getComponent('user')
+#4 /var/www/html/Sites/webapp1/protected/views/layouts/main.php(36): CModule->__get('user')
+#5 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#6 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#7 /var/www/html/Sites/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#8 /var/www/html/Sites/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/html/Sites/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/html/Sites/framework/web/CBaseController.php(214): COutputProcessor->run()
+#11 /var/www/html/Sites/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/html/Sites/webapp1/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#14 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#15 /var/www/html/Sites/framework/web/CController.php(784): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#16 /var/www/html/Sites/webapp1/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/html/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('')
+#22 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#24 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/Sites/webapp1/index.php?
+---
+2015/10/05 19:07:53 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.Class" is not defined.' in /var/www/html/Sites/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/Sites/framework/web/auth/CWebUser.php(160): CComponent->__set('Class', 'User')
+#1 /var/www/html/Sites/framework/YiiBase.php(220): CWebUser->__set('Class', 'User')
+#2 /var/www/html/Sites/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#3 /var/www/html/Sites/framework/base/CModule.php(103): CModule->getComponent('user')
+#4 /var/www/html/Sites/webapp1/protected/views/layouts/main.php(36): CModule->__get('user')
+#5 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#6 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#7 /var/www/html/Sites/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#8 /var/www/html/Sites/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/html/Sites/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/html/Sites/framework/web/CBaseController.php(214): COutputProcessor->run()
+#11 /var/www/html/Sites/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/html/Sites/webapp1/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#14 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#15 /var/www/html/Sites/framework/web/CController.php(784): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#16 /var/www/html/Sites/webapp1/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/html/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('')
+#22 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#24 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/Sites/webapp1/index.php/user/
+---
+2015/10/05 19:08:05 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.Class" is not defined.' in /var/www/html/Sites/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/Sites/framework/web/auth/CWebUser.php(160): CComponent->__set('Class', 'User')
+#1 /var/www/html/Sites/framework/YiiBase.php(220): CWebUser->__set('Class', 'User')
+#2 /var/www/html/Sites/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#3 /var/www/html/Sites/framework/base/CModule.php(103): CModule->getComponent('user')
+#4 /var/www/html/Sites/webapp1/protected/views/layouts/main.php(36): CModule->__get('user')
+#5 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#6 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#7 /var/www/html/Sites/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#8 /var/www/html/Sites/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/html/Sites/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/html/Sites/framework/web/CBaseController.php(214): COutputProcessor->run()
+#11 /var/www/html/Sites/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/html/Sites/webapp1/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#14 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#15 /var/www/html/Sites/framework/web/CController.php(784): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#16 /var/www/html/Sites/webapp1/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/html/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('')
+#22 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#24 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/Sites/webapp1/index.php/user/install
+---
+2015/10/05 19:08:59 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.Class" is not defined.' in /var/www/html/Sites/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/Sites/framework/web/auth/CWebUser.php(160): CComponent->__set('Class', 'User')
+#1 /var/www/html/Sites/framework/YiiBase.php(220): CWebUser->__set('Class', 'User')
+#2 /var/www/html/Sites/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#3 /var/www/html/Sites/framework/base/CModule.php(103): CModule->getComponent('user')
+#4 /var/www/html/Sites/webapp1/protected/views/layouts/main.php(36): CModule->__get('user')
+#5 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#6 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#7 /var/www/html/Sites/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#8 /var/www/html/Sites/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/html/Sites/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/html/Sites/framework/web/CBaseController.php(214): COutputProcessor->run()
+#11 /var/www/html/Sites/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/html/Sites/webapp1/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#14 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#15 /var/www/html/Sites/framework/web/CController.php(784): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#16 /var/www/html/Sites/webapp1/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/html/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('')
+#22 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#24 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/Sites/webapp1/index.php/user/install
+---
+2015/10/05 19:09:01 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.Class" is not defined.' in /var/www/html/Sites/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/html/Sites/framework/web/auth/CWebUser.php(160): CComponent->__set('Class', 'User')
+#1 /var/www/html/Sites/framework/YiiBase.php(220): CWebUser->__set('Class', 'User')
+#2 /var/www/html/Sites/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#3 /var/www/html/Sites/framework/base/CModule.php(103): CModule->getComponent('user')
+#4 /var/www/html/Sites/webapp1/protected/views/layouts/main.php(36): CModule->__get('user')
+#5 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#6 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#7 /var/www/html/Sites/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#8 /var/www/html/Sites/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#9 /var/www/html/Sites/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#10 /var/www/html/Sites/framework/web/CBaseController.php(214): COutputProcessor->run()
+#11 /var/www/html/Sites/framework/web/CBaseController.php(308): CBaseController->endWidget('CContentDecorat...')
+#12 /var/www/html/Sites/webapp1/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#13 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#14 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#15 /var/www/html/Sites/framework/web/CController.php(784): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#16 /var/www/html/Sites/webapp1/protected/controllers/SiteController.php(32): CController->render('index')
+#17 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#18 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/html/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('')
+#22 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#23 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#24 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/Sites/webapp1/index.php/user/install
+---
+2015/10/05 19:09:35 [error] [php] include(User.php): failed to open stream: No such file or directory (/var/www/html/Sites/framework/YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/html/Sites/framework/YiiBase.php(303): class_exists()
+#2 /var/www/html/Sites/framework/YiiBase.php(196): import()
+#3 /var/www/html/Sites/framework/base/CModule.php(393): createComponent()
+#4 /var/www/html/Sites/framework/base/CModule.php(103): CWebApplication->getComponent()
+#5 /var/www/html/Sites/webapp1/protected/views/layouts/main.php(36): CWebApplication->__get()
+#6 /var/www/html/Sites/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/html/Sites/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#9 /var/www/html/Sites/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#10 /var/www/html/Sites/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#11 /var/www/html/Sites/framework/web/CBaseController.php(214): CContentDecorator->run()
+#12 /var/www/html/Sites/framework/web/CBaseController.php(308): SiteController->endWidget()
+#13 /var/www/html/Sites/webapp1/protected/views/layouts/column1.php(6): SiteController->endContent()
+#14 /var/www/html/Sites/framework/web/CBaseController.php(126): require()
+#15 /var/www/html/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#16 /var/www/html/Sites/framework/web/CController.php(784): SiteController->renderFile()
+#17 /var/www/html/Sites/webapp1/protected/controllers/SiteController.php(32): SiteController->render()
+#18 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#19 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#20 /var/www/html/Sites/framework/web/CController.php(286): SiteController->runAction()
+#21 /var/www/html/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#22 /var/www/html/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#23 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#24 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#25 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php/user/install
+in /var/www/html/Sites/webapp1/protected/views/layouts/main.php (36)
+in /var/www/html/Sites/webapp1/protected/views/layouts/column1.php (6)
+in /var/www/html/Sites/webapp1/protected/controllers/SiteController.php (32)
+2015/10/05 19:12:05 [error] [php] include(User.php): failed to open stream: No such file or directory (/var/www/html/Sites/framework/YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 /var/www/html/Sites/framework/YiiBase.php(303): class_exists()
+#2 /var/www/html/Sites/framework/YiiBase.php(196): import()
+#3 /var/www/html/Sites/framework/base/CModule.php(393): createComponent()
+#4 /var/www/html/Sites/framework/base/CModule.php(103): CWebApplication->getComponent()
+#5 /var/www/html/Sites/webapp1/protected/views/layouts/main.php(36): CWebApplication->__get()
+#6 /var/www/html/Sites/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/html/Sites/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#9 /var/www/html/Sites/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#10 /var/www/html/Sites/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#11 /var/www/html/Sites/framework/web/CBaseController.php(214): CContentDecorator->run()
+#12 /var/www/html/Sites/framework/web/CBaseController.php(308): SiteController->endWidget()
+#13 /var/www/html/Sites/webapp1/protected/views/layouts/column1.php(6): SiteController->endContent()
+#14 /var/www/html/Sites/framework/web/CBaseController.php(126): require()
+#15 /var/www/html/Sites/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#16 /var/www/html/Sites/framework/web/CController.php(784): SiteController->renderFile()
+#17 /var/www/html/Sites/webapp1/protected/controllers/SiteController.php(32): SiteController->render()
+#18 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#19 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#20 /var/www/html/Sites/framework/web/CController.php(286): SiteController->runAction()
+#21 /var/www/html/Sites/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#22 /var/www/html/Sites/framework/web/CWebApplication.php(282): SiteController->run()
+#23 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#24 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#25 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php/user/install
+in /var/www/html/Sites/webapp1/protected/views/layouts/main.php (36)
+in /var/www/html/Sites/webapp1/protected/views/layouts/column1.php (6)
+in /var/www/html/Sites/webapp1/protected/controllers/SiteController.php (32)
+2015/10/05 19:31:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1217 Cannot delete or update a parent row: a foreign key constraint fails. The SQL statement executed was: drop table if exists users, messages, profile_fields, profiles, roles, user_has_role.
+in /var/www/html/Sites/webapp1/protected/modules/user/controllers/InstallController.php (30)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/05 19:31:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1217 Cannot delete or update a parent row: a foreign key constraint fails. The SQL statement executed was: drop table if exists users, messages, profile_fields, profiles, roles, user_has_role' in /var/www/html/Sites/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/html/Sites/webapp1/protected/modules/user/controllers/InstallController.php(30): CDbCommand->execute()
+#1 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): InstallController->actionInstall()
+#2 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /var/www/html/Sites/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('install')
+#6 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('user/install/in...')
+#7 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#8 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=user/install/install
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=user/install
+---
+2015/10/05 19:39:19 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "isAdmin".' in /var/www/html/Sites/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/Sites/webapp1/protected/modules/user/views/user/view.php(23): CComponent->__call('isAdmin', Array)
+#1 /var/www/html/Sites/webapp1/protected/modules/user/views/user/view.php(23): CWebUser->isAdmin()
+#2 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#3 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#4 /var/www/html/Sites/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#5 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('/user/view', Array, true)
+#6 /var/www/html/Sites/webapp1/protected/modules/user/controllers/UserController.php(342): CController->render('/user/view', Array)
+#7 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): UserController->actionView()
+#8 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('view')
+#17 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('user/user/view')
+#18 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#19 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=user/user/view&id=1
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=user/user/admin
+---
+2015/10/06 11:14:51 [error] [exception.CException] exception 'CException' with message 'CWebUser and its behaviors do not have a method or closure named "isAdmin".' in /var/www/html/Sites/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/Sites/webapp1/protected/modules/user/views/user/myprofile.php(14): CComponent->__call('isAdmin', Array)
+#1 /var/www/html/Sites/webapp1/protected/modules/user/views/user/myprofile.php(14): CWebUser->isAdmin()
+#2 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#3 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#4 /var/www/html/Sites/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#5 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('/user/myprofile', Array, true)
+#6 /var/www/html/Sites/webapp1/protected/modules/user/controllers/UserController.php(291): CController->render('/user/myprofile', Array)
+#7 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): UserController->actionProfile()
+#8 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('profile')
+#17 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('user/user/profi...')
+#18 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#19 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=user/user/profile
+HTTP_REFERER=http://localhost/Sites/webapp1/index.php?r=site/login
+---
+2015/10/07 06:34:42 [error] [exception.CException] exception 'CException' with message 'Members and its behaviors do not have a method or closure named "getTypeText".' in /var/www/html/Sites/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(227): CComponent->__call('getTypeText', Array)
+#1 /var/www/html/Sites/webapp1/protected/views/members/_view.php(17): CActiveRecord->__call('getTypeText', Array)
+#2 /var/www/html/Sites/webapp1/protected/views/members/_view.php(17): Members->getTypeText()
+#3 /var/www/html/Sites/framework/web/CBaseController.php(130): require('/var/www/html/S...')
+#4 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, false)
+#5 /var/www/html/Sites/framework/zii/widgets/CListView.php(291): CBaseController->renderFile('/var/www/html/S...', Array)
+#6 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#9 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#10 /var/www/html/Sites/framework/web/CBaseController.php(181): CBaseListView->run()
+#11 /var/www/html/Sites/webapp1/protected/views/members/index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#12 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#13 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#14 /var/www/html/Sites/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#15 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#16 /var/www/html/Sites/webapp1/protected/controllers/MembersController.php(128): CController->render('index', Array)
+#17 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): MembersController->actionIndex()
+#18 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#22 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#23 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#24 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#25 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('')
+#27 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('members')
+#28 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#29 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=members
+---
+2015/10/07 06:35:36 [error] [exception.CException] exception 'CException' with message 'MembershipTypes and its behaviors do not have a method or closure named "getTypeText".' in /var/www/html/Sites/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(227): CComponent->__call('getTypeText', Array)
+#1 /var/www/html/Sites/webapp1/protected/views/members/_view.php(17): CActiveRecord->__call('getTypeText', Array)
+#2 /var/www/html/Sites/webapp1/protected/views/members/_view.php(17): MembershipTypes->getTypeText()
+#3 /var/www/html/Sites/framework/web/CBaseController.php(130): require('/var/www/html/S...')
+#4 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, false)
+#5 /var/www/html/Sites/framework/zii/widgets/CListView.php(291): CBaseController->renderFile('/var/www/html/S...', Array)
+#6 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#7 [internal function]: CBaseListView->renderSection(Array)
+#8 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#9 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#10 /var/www/html/Sites/framework/web/CBaseController.php(181): CBaseListView->run()
+#11 /var/www/html/Sites/webapp1/protected/views/members/index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#12 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#13 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#14 /var/www/html/Sites/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#15 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#16 /var/www/html/Sites/webapp1/protected/controllers/MembersController.php(128): CController->render('index', Array)
+#17 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): MembersController->actionIndex()
+#18 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#22 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#23 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#24 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#25 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('')
+#27 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('members')
+#28 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#29 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=members
+---
+2015/10/07 12:26:42 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'sds.gender' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `gender`.
+in /var/www/html/Sites/webapp1/protected/controllers/GenderController.php (65)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 12:26:42 [error] [exception.CDbException] exception 'CDbException' with message 'The table "gender" for active record class "Gender" cannot be found in the database.' in /var/www/html/Sites/framework/db/ar/CActiveRecord.php:2385
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Gender))
+#1 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 /var/www/html/Sites/webapp1/protected/controllers/GenderController.php(65): CActiveRecord->__construct()
+#3 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): GenderController->actionCreate()
+#4 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('gender/create')
+#14 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=gender/create
+---
+2015/10/07 12:30:26 [warning] [application] Failed to set unsafe attribute "dateCreated" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 12:30:26 [warning] [application] Failed to set unsafe attribute "dateModified" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 12:31:06 [warning] [application] Failed to set unsafe attribute "dateCreated" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 12:31:06 [warning] [application] Failed to set unsafe attribute "dateModified" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 12:31:44 [warning] [application] Failed to set unsafe attribute "dateCreated" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 12:31:44 [warning] [application] Failed to set unsafe attribute "dateModified" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:03:26 [warning] [application] Failed to set unsafe attribute "dateCreated" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:03:26 [warning] [application] Failed to set unsafe attribute "dateModified" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:04:22 [warning] [application] Failed to set unsafe attribute "dateCreated" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:04:22 [warning] [application] Failed to set unsafe attribute "dateModified" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:04:56 [warning] [application] Failed to set unsafe attribute "dateCreated" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:04:56 [warning] [application] Failed to set unsafe attribute "dateModified" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:04:56 [error] [php] Trying to get property of non-object (/var/www/html/Sites/framework/zii/behaviors/CTimestampBehavior.php:110)
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(843): Genders->raiseEvent()
+#1 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(945): Genders->onBeforeSave()
+#2 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(1074): Genders->beforeSave()
+#3 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(809): Genders->insert()
+#4 /var/www/html/Sites/webapp1/protected/controllers/GendersController.php(73): Genders->save()
+#5 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): GendersController->actionCreate()
+#6 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): GendersController->runAction()
+#8 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/html/Sites/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): GendersController->filterAccessControl()
+#11 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/html/Sites/framework/web/CController.php(265): GendersController->runActionWithFilters()
+#14 /var/www/html/Sites/framework/web/CWebApplication.php(282): GendersController->run()
+#15 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=genders/create
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (73)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:05:15 [warning] [application] Failed to set unsafe attribute "dateCreated" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:05:15 [warning] [application] Failed to set unsafe attribute "dateModified" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:05:15 [error] [php] Trying to get property of non-object (/var/www/html/Sites/framework/zii/behaviors/CTimestampBehavior.php:110)
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(843): Genders->raiseEvent()
+#1 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(945): Genders->onBeforeSave()
+#2 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(1074): Genders->beforeSave()
+#3 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(809): Genders->insert()
+#4 /var/www/html/Sites/webapp1/protected/controllers/GendersController.php(73): Genders->save()
+#5 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): GendersController->actionCreate()
+#6 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): GendersController->runAction()
+#8 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/html/Sites/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): GendersController->filterAccessControl()
+#11 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/html/Sites/framework/web/CController.php(265): GendersController->runActionWithFilters()
+#14 /var/www/html/Sites/framework/web/CWebApplication.php(282): GendersController->run()
+#15 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=genders/create
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (73)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:05:32 [warning] [application] Failed to set unsafe attribute "dateCreated" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:05:32 [warning] [application] Failed to set unsafe attribute "dateModified" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:05:32 [error] [php] Trying to get property of non-object (/var/www/html/Sites/framework/zii/behaviors/CTimestampBehavior.php:110)
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(843): Genders->raiseEvent()
+#1 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(945): Genders->onBeforeSave()
+#2 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(1074): Genders->beforeSave()
+#3 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(809): Genders->insert()
+#4 /var/www/html/Sites/webapp1/protected/controllers/GendersController.php(73): Genders->save()
+#5 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): GendersController->actionCreate()
+#6 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#7 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): GendersController->runAction()
+#8 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /var/www/html/Sites/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#10 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): GendersController->filterAccessControl()
+#11 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#12 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#13 /var/www/html/Sites/framework/web/CController.php(265): GendersController->runActionWithFilters()
+#14 /var/www/html/Sites/framework/web/CWebApplication.php(282): GendersController->run()
+#15 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#17 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=genders/create
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (73)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:06:05 [warning] [application] Failed to set unsafe attribute "dateCreated" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:06:05 [warning] [application] Failed to set unsafe attribute "dateModified" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:41:39 [warning] [application] Failed to set unsafe attribute "dateCreated" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:41:39 [warning] [application] Failed to set unsafe attribute "dateModified" of "Genders".
+in /var/www/html/Sites/webapp1/protected/controllers/GendersController.php (72)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 13:55:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "membercities/view".' in /var/www/html/Sites/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('membercities/vi...')
+#1 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=membercities/view&id=5
+---
+2015/10/07 14:02:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /var/www/html/Sites/webapp1/protected/controllers/MemberDetailsController.php:157
+Stack trace:
+#0 /var/www/html/Sites/webapp1/protected/controllers/MemberDetailsController.php(55): MemberDetailsController->loadModel('6')
+#1 [internal function]: MemberDetailsController->actionView('6')
+#2 /var/www/html/Sites/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(MemberDetailsController), Array)
+#3 /var/www/html/Sites/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(MemberDetailsController), Object(ReflectionMethod), Array)
+#4 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('view')
+#13 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('memberDetails/v...')
+#14 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=memberDetails/view&id=6
+---
+2015/10/07 14:32:27 [error] [php] Trying to get property of non-object (/var/www/html/Sites/framework/zii/behaviors/CTimestampBehavior.php:110)
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(843): Personnels->raiseEvent()
+#1 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(945): Personnels->onBeforeSave()
+#2 /var/www/html/Sites/webapp1/protected/models/Webapp1ActiveRecord.php(23): Personnels->beforeSave()
+#3 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(1074): Personnels->beforeSave()
+#4 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(809): Personnels->insert()
+#5 /var/www/html/Sites/webapp1/protected/controllers/PersonnelsController.php(73): Personnels->save()
+#6 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): PersonnelsController->actionCreate()
+#7 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): PersonnelsController->runAction()
+#9 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/Sites/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#11 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): PersonnelsController->filterAccessControl()
+#12 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#13 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/Sites/framework/web/CController.php(265): PersonnelsController->runActionWithFilters()
+#15 /var/www/html/Sites/framework/web/CWebApplication.php(282): PersonnelsController->run()
+#16 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/html/Sites/webapp1/index.php(13): CWebApplication->run()
+REQUEST_URI=/Sites/webapp1/index.php?r=personnels/create
+in /var/www/html/Sites/webapp1/protected/models/Webapp1ActiveRecord.php (23)
+in /var/www/html/Sites/webapp1/protected/controllers/PersonnelsController.php (73)
+in /var/www/html/Sites/webapp1/index.php (13)
+2015/10/07 14:43:52 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/Sites/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/Sites/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('users/view')
+#10 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=users/view
+---
+2015/10/07 14:43:57 [error] [exception.CException] exception 'CException' with message 'Property "Users.userID" is not defined.' in /var/www/html/Sites/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(145): CComponent->__get('userID')
+#1 /var/www/html/Sites/webapp1/protected/views/users/_view.php(9): CActiveRecord->__get('userID')
+#2 /var/www/html/Sites/framework/web/CBaseController.php(130): require('/var/www/html/S...')
+#3 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, false)
+#4 /var/www/html/Sites/framework/zii/widgets/CListView.php(291): CBaseController->renderFile('/var/www/html/S...', Array)
+#5 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/html/Sites/framework/web/CBaseController.php(181): CBaseListView->run()
+#10 /var/www/html/Sites/webapp1/protected/views/users/index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#12 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#13 /var/www/html/Sites/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#14 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#15 /var/www/html/Sites/webapp1/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#16 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#17 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('')
+#26 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('users')
+#27 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#28 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=users
+---
+2015/10/07 14:44:17 [error] [exception.CException] exception 'CException' with message 'Property "Users.userID" is not defined.' in /var/www/html/Sites/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/Sites/framework/db/ar/CActiveRecord.php(145): CComponent->__get('userID')
+#1 /var/www/html/Sites/webapp1/protected/views/users/_view.php(9): CActiveRecord->__get('userID')
+#2 /var/www/html/Sites/framework/web/CBaseController.php(130): require('/var/www/html/S...')
+#3 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, false)
+#4 /var/www/html/Sites/framework/zii/widgets/CListView.php(291): CBaseController->renderFile('/var/www/html/S...', Array)
+#5 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{sort...')
+#8 /var/www/html/Sites/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /var/www/html/Sites/framework/web/CBaseController.php(181): CBaseListView->run()
+#10 /var/www/html/Sites/webapp1/protected/views/users/index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /var/www/html/Sites/framework/web/CBaseController.php(126): require('/var/www/html/S...')
+#12 /var/www/html/Sites/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/html/S...', Array, true)
+#13 /var/www/html/Sites/framework/web/CController.php(869): CBaseController->renderFile('/var/www/html/S...', Array, true)
+#14 /var/www/html/Sites/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#15 /var/www/html/Sites/webapp1/protected/controllers/UsersController.php(128): CController->render('index', Array)
+#16 /var/www/html/Sites/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#17 /var/www/html/Sites/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /var/www/html/Sites/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/Sites/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /var/www/html/Sites/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#21 /var/www/html/Sites/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /var/www/html/Sites/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#23 /var/www/html/Sites/framework/web/CController.php(291): CFilterChain->run()
+#24 /var/www/html/Sites/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /var/www/html/Sites/framework/web/CWebApplication.php(282): CController->run('')
+#26 /var/www/html/Sites/framework/web/CWebApplication.php(141): CWebApplication->runController('Users')
+#27 /var/www/html/Sites/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#28 /var/www/html/Sites/webapp1/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/Sites/webapp1/index.php?r=Users
+---

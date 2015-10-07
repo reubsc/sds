@@ -71,6 +71,21 @@ class SiteController extends Controller
 		}
 		$this->render('contact',array('model'=>$model));
 	}
+        
+	/**
+	 * Displays the contact page
+	 */
+	public function actionMembers()
+	{
+		$model=new Members('search');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['Members']))
+			$model->attributes=$_GET['Members'];
+
+		$this->render('admin',array(
+			'model'=>$model,
+		));
+	}
 
 	/**
 	 * Displays the login page

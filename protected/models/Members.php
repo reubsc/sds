@@ -22,7 +22,7 @@
  * @property MembershipTypes $membershipType
  * @property Regions $region
  */
-class Members extends CActiveRecord
+class Members extends Webapp1ActiveRecord
 {
 	/**
 	 * @return string the associated database table name
@@ -46,16 +46,6 @@ class Members extends CActiveRecord
 			array('dialCode, ISO_CODE', 'length', 'max'=>5),
 			array('root_domain, abbrv', 'length', 'max'=>4),
 			array('notes', 'length', 'max'=>200),
-			array('insertedBy, updatedBy', 'length', 'max'=>10),
-			array('dateCreated', 'safe'),
-                        array('dateCreated, dateModified', 'default',
-                            'value'=> new CDbExpression('NOW()'),
-                            'setOnEmpty'=>false,
-                            'on'=> 'insert'),
-                        array('dateModified', 'default',
-                            'value'=> new CDbExpression('NOW()'),
-                            'setOnEmpty'=>false,
-                            'on'=> 'update'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('memberID, regionID, membershipTypeID, memberName, dialCode, root_domain, abbrv, ISO_CODE, notes, insertedBy, dateCreated, updatedBy, dateModified', 'safe', 'on'=>'search'),

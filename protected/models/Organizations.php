@@ -36,7 +36,7 @@
  * @property Members $member
  * @property OrganizationTypes $organizationType
  */
-class Organizations extends CActiveRecord
+class Organizations extends Webapp1ActiveRecord
 {
 	/**
 	 * @return string the associated database table name
@@ -55,7 +55,7 @@ class Organizations extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('organizationName, organizationCode, MSISDN, otherMSISDN, fax, emailAddress', 'required'),
-			array('passwordExpiryAge, active, insertedBy, updatedBy', 'numerical', 'integerOnly'=>true),
+			array('passwordExpiryAge, active', 'numerical', 'integerOnly'=>true),
 			array('memberID, organizationTypeID', 'length', 'max'=>11),
 			array('organizationName, organizationCode, fax', 'length', 'max'=>100),
 			array('organizationDesc, twitter, facebook, website, linkedIn, youtube', 'length', 'max'=>255),
@@ -64,15 +64,7 @@ class Organizations extends CActiveRecord
 			array('postalAddress', 'length', 'max'=>160),
 			array('physicalAddress, emailAddress', 'length', 'max'=>200),
 			array('adminMode', 'length', 'max'=>1),
-			array('activityHistory, dateCreated', 'safe'),
-                        array('dateCreated, dateModified', 'default',
-                            'value'=> new CDbExpression('NOW()'),
-                            'setOnEmpty'=>false,
-                            'on'=> 'insert'),
-                        array('dateModified', 'default',
-                            'value'=> new CDbExpression('NOW()'),
-                            'setOnEmpty'=>false,
-                            'on'=> 'update'),
+			array('activityHistory', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('organizationID, memberID, organizationTypeID, organizationName, organizationDesc, organizationCode, MSISDN, otherMSISDN, telephoneNo, otherTelephoneNo, fax, postalAddress, physicalAddress, emailAddress, twitter, facebook, website, linkedIn, youtube, passwordExpiryAge, adminMode, active, activityHistory, insertedBy, dateCreated, updatedBy, dateModified', 'safe', 'on'=>'search'),

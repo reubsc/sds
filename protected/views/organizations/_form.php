@@ -159,30 +159,6 @@
 		<?php echo $form->error($model,'activityHistory'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'insertedBy'); ?>
-		<?php echo $form->textField($model,'insertedBy'); ?>
-		<?php echo $form->error($model,'insertedBy'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'dateCreated'); ?>
-		<?php echo $form->textField($model,'dateCreated'); ?>
-		<?php echo $form->error($model,'dateCreated'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'updatedBy'); ?>
-		<?php echo $form->textField($model,'updatedBy'); ?>
-		<?php echo $form->error($model,'updatedBy'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'dateModified'); ?>
-		<?php echo $form->textField($model,'dateModified'); ?>
-		<?php echo $form->error($model,'dateModified'); ?>
-	</div>
-
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

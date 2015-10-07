@@ -16,7 +16,7 @@
  * The followings are the available model relations:
  * @property MemberDetails[] $memberDetails
  */
-class GovermentTypes extends CActiveRecord
+class GovermentTypes extends Webapp1ActiveRecord
 {
 	/**
 	 * @return string the associated database table name
@@ -38,16 +38,6 @@ class GovermentTypes extends CActiveRecord
 			array('active', 'numerical', 'integerOnly'=>true),
 			array('govermentTypeName', 'length', 'max'=>100),
 			array('description', 'length', 'max'=>200),
-			array('insertedBy, updatedBy', 'length', 'max'=>10),
-			array('dateCreated', 'safe'),
-                        array('dateCreated, dateModified', 'default',
-                            'value'=> new CDbExpression('NOW()'),
-                            'setOnEmpty'=>false,
-                            'on'=> 'insert'),
-                        array('dateModified', 'default',
-                            'value'=> new CDbExpression('NOW()'),
-                            'setOnEmpty'=>false,
-                            'on'=> 'update'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('govermentTypeID, govermentTypeName, description, active, insertedBy, dateCreated, updatedBy, dateModified', 'safe', 'on'=>'search'),

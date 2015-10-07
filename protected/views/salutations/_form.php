@@ -43,18 +43,6 @@
 		<?php echo $form->error($model,'active'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'insertedBy'); ?>
-		<?php echo $form->textField($model,'insertedBy',array('size'=>11,'maxlength'=>11)); ?>
-		<?php echo $form->error($model,'insertedBy'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'updatedBy'); ?>
-		<?php echo $form->textField($model,'updatedBy',array('size'=>11,'maxlength'=>11)); ?>
-		<?php echo $form->error($model,'updatedBy'); ?>
-	</div>
-
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

@@ -21,7 +21,7 @@
  * @property GovermentTypes $govermentType
  * @property Members $member
  */
-class MemberDetails extends CActiveRecord
+class MemberDetails extends Webapp1ActiveRecord
 {
 	/**
 	 * @return string the associated database table name
@@ -43,16 +43,6 @@ class MemberDetails extends CActiveRecord
 			array('memberID, govermentTypeID', 'length', 'max'=>11),
 			array('capital', 'length', 'max'=>120),
 			array('population, grossDomesticProduct, numberOfTelephoneLines, numberOfMobileLines', 'length', 'max'=>15),
-			array('insertedBy, updatedBy', 'length', 'max'=>10),
-			array('dateCreated', 'safe'),
-                        array('dateCreated, dateModified', 'default',
-                            'value'=> new CDbExpression('NOW()'),
-                            'setOnEmpty'=>false,
-                            'on'=> 'insert'),
-                        array('dateModified', 'default',
-                            'value'=> new CDbExpression('NOW()'),
-                            'setOnEmpty'=>false,
-                            'on'=> 'update'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('memberDetailID, memberID, govermentTypeID, capital, population, grossDomesticProduct, numberOfTelephoneLines, numberOfMobileLines, insertedBy, dateCreated, updatedBy, dateModified', 'safe', 'on'=>'search'),

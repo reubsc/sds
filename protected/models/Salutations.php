@@ -14,7 +14,7 @@
  * @property string $updatedBy
  * @property string $dateModified
  */
-class Salutations extends CActiveRecord
+class Salutations extends Webapp1ActiveRecord
 {
 	/**
 	 * @return string the associated database table name
@@ -36,16 +36,6 @@ class Salutations extends CActiveRecord
 			array('active', 'numerical', 'integerOnly'=>true),
 			array('salutationName, abbreviation', 'length', 'max'=>45),
 			array('description', 'length', 'max'=>50),
-			array('insertedBy, updatedBy', 'length', 'max'=>11),
-			array('dateCreated', 'safe'),
-                        array('dateCreated, dateModified', 'default',
-                            'value'=> new CDbExpression('NOW()'),
-                            'setOnEmpty'=> false, 
-                            'on'=>'insert'),
-                        array('dateModified', 'default',
-                            'value'=> new CDbExpression('NOW()'),
-                            'setOnEmpty'=> false, 
-                            'on'=>'update'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('salutationID, salutationName, description, abbreviation, active, insertedBy, dateCreated, updatedBy, dateModified', 'safe', 'on'=>'search'),

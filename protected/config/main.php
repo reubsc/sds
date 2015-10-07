@@ -27,16 +27,27 @@ return array(
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
+                'user'=>array(
+                    'debug'=> true,
+                ),
 		
 	),
 
 	// application components
 	'components'=>array(
 
-		'user'=>array(
+		'User'=>array(
+                        'class' => 'application.modules.user.components.WebUser',
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+                        //'class'=>'User',
+                        'loginUrl' => array('/user/user/login'),
+                        
 		),
+                
+                'import'=>array(
+                    'application.modules.user.models.*',
+                ),
 
 		// uncomment the following to enable URLs in path-format
 		/*

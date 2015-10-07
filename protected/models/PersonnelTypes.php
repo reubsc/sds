@@ -13,7 +13,7 @@
  * @property string $updatedBy
  * @property string $dateModified
  */
-class PersonnelTypes extends CActiveRecord
+class PersonnelTypes extends Webapp1ActiveRecord
 {
 	/**
 	 * @return string the associated database table name
@@ -35,16 +35,6 @@ class PersonnelTypes extends CActiveRecord
 			array('active', 'numerical', 'integerOnly'=>true),
 			array('personnelTypeName', 'length', 'max'=>100),
 			array('description', 'length', 'max'=>200),
-			array('insertedBy, updatedBy', 'length', 'max'=>10),
-			array('dateCreated', 'safe'),
-                        array('dateCreated, dateModified', 'default',
-                            'value'=> new CDbExpression('NOW()'),
-                            'setOnEmpty'=>false,
-                            'on'=> 'insert'),
-                        array('dateModified', 'default',
-                            'value'=> new CDbExpression('NOW()'),
-                            'setOnEmpty'=>false,
-                            'on'=> 'update'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('personnelTypeID, personnelTypeName, description, active, insertedBy, dateCreated, updatedBy, dateModified', 'safe', 'on'=>'search'),
