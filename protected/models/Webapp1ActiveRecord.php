@@ -16,7 +16,7 @@ protected function beforeSave()
     if(null !== Yii::app()->user)
         $id=Yii::app()->user->id;
     else
-        $id=1;
+        $id=2;
     if($this->isNewRecord)
         $this->insertedBy=$id;
         $this->updatedBy=$id;
@@ -33,8 +33,8 @@ public function behaviors()
         'class' => 'zii.behaviors.CTimestampBehavior',
         'createAttribute' => 'dateCreated',
         'updateAttribute' => 'dateModified',
-        'updateAttribute'=>'dateActivated',
-        'updateAttribute'=>'datePasswordChanged',
+      //  'updateAttribute'=>'dateActivated',
+       // 'updateAttribute'=>'datePasswordChanged',
         
         'setUpdateOnCreate' => true,
         ),

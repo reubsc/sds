@@ -37,13 +37,20 @@ return array(
 	'components'=>array(
 
 		'User'=>array(
-                        'class' => 'application.modules.user.components.WebUser',
+                       // 'class' => 'application.modules.user.components.WebUser',
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
                         //'class'=>'User',
-                        'loginUrl' => array('/user/user/login'),
+                      //  'loginUrl' => array('/user/user/login'),
                         
 		),
+                'authManager'=>array(
+                    'class'=>'CDbAuthManager',
+                    'connectionID'=>'db',
+                    'itemTable' =>'tbl_auth_item',
+                    'itemChildTable' =>'tbl_auth_item_child',
+                    'assignmentTable' =>'tbl_auth_assignment',
+                ),
                 
                 'import'=>array(
                     'application.modules.user.models.*',
